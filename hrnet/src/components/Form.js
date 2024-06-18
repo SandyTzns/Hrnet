@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../css/form.css";
 
 export default function Form() {
   return (
     <div className="employee_form">
       <h1>HRnet</h1>
-      <a href="/">View Current Employee</a>
+      <NavLink to="/employees">View Current Employee</NavLink>
       <h3>Create Employee</h3>
       <form>
         <div className="forms_input">
