@@ -10,16 +10,27 @@
 
 18/06
 
-- The form and the table should be on 2 different pages, do the routes to go from form to table
+- The form and the table should be on 2 different pages, do the routes to go from form to table - DONE
+
+* Completed BasicTable pages (added h1, sorting selct and input, link to home, css) - DONE
+
+19/06
+
+- Configuration Redux
 
 Liste de tasks à faire :
 
-- do you need mockup data OR do you create the table yourself based on the forms submitted?
-- do the submitted forms complete the table?
-- FORM -
+What I really want to do : \*\* alert form submitted
+
+- save info to Redux when submitted form \*\*
+
+* finish tuto for Table
+* do you need mockup data OR do you create the table yourself based on the forms submitted?
+* do the submitted forms complete the table?
+* FORM -
   no placeholder for input date and select
-- link for View current employee
-- config REDUX
-- learn more about plugins and react plugins
-- find 3 react plugins
-- CSS the app (if you want ! Not necessary)
+* link for View current employee
+* config REDUX
+* learn more about plugins and react plugins
+* find 3 react plugins
+* CSS the app (if you want ! Not necessary)
