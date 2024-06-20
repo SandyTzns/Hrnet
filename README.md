@@ -16,21 +16,23 @@
 
 19/06
 
-- Configuration Redux
+1 commentaire - DONE
+
+20/06
+
+- Configuration Redux - DONE
+- Fonction submit form
+- Dispatch to REDUX
 
 Liste de tasks à faire :
 
 What I really want to do : \*\* alert form submitted
 
-- save info to Redux when submitted form \*\*
+- css FORM
+- finish tuto for Table
+- FORM -
+- Pluging modal voir :
+  https://github.com/Anoerak/Tutorials/tree/main/React/React_Create_Your_NPM_Package
+- CSS the app (if you want ! Not necessary)
 
-* finish tuto for Table
-* do you need mockup data OR do you create the table yourself based on the forms submitted?
-* do the submitted forms complete the table?
-* FORM -
-  no placeholder for input date and select
-* link for View current employee
-* config REDUX
-* learn more about plugins and react plugins
-* find 3 react plugins
-* CSS the app (if you want ! Not necessary)
+Installler npm
