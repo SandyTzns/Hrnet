@@ -26,9 +26,11 @@
 
 - Dispatch to REDUX - DONE
 - map() pour les select (DEPARTMENT + STATE) - DONE
+- Alert quand submitted - DONE
+- Delete form after submission - DONE
 
-- Alert quand submitted
-- Delete form after submission
+22/06
+
 - Add submitted profile to basicTable
   Refaire le mock data pour avoir 100 profiles
 

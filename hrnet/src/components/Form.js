@@ -7,32 +7,34 @@ import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
 
 export default function Form() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [department, setDepartment] = useState("");
-  const [birthday, setBirthday] = useState("");
-  const [street, setStreet] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [zipCode, setZipCode] = useState("");
+  const initialState = {
+    firstName: "",
+    lastName: "",
+    startDate: "",
+    department: "",
+    birthday: "",
+    street: "",
+    city: "",
+    state: "",
+    zipCode: "",
+  };
+  const [formData, setFormData] = useState(initialState);
 
   const dispatch = useDispatch();
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const Submit = (e) => {
     e.preventDefault();
-    const employeeData = {
-      firstName,
-      lastName,
-      startDate,
-      department,
-      birthday,
-      street,
-      city,
-      state,
-      zipCode,
-    };
-    dispatch(createNewEmployee(employeeData));
+    alert("form submitted");
+    dispatch(createNewEmployee(formData));
+    setFormData(initialState);
   };
 
   return (
@@ -46,8 +48,9 @@ export default function Form() {
           <label>First Name</label>
           <input
             type="text"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
             required
           ></input>
         </div>
@@ -56,8 +59,9 @@ export default function Form() {
           <label>Last Name</label>
           <input
             type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
             required
           ></input>
         </div>
@@ -68,8 +72,8 @@ export default function Form() {
             type="date"
             id="birthday"
             name="birthday"
-            value={birthday}
-            onChange={(e) => setBirthday(e.target.value)}
+            value={formData.birthday}
+            onChange={handleChange}
             required
           ></input>
         </div>
@@ -79,9 +83,9 @@ export default function Form() {
           <input
             type="date"
             id="date"
-            name="date"
-            value={startDate}
-            onChange={(e) => setStartDate(e.target.value)}
+            name="startDate"
+            value={formData.startDate}
+            onChange={handleChange}
             required
           ></input>
         </div>
@@ -93,8 +97,9 @@ export default function Form() {
             <label>Street</label>
             <input
               type="text"
-              value={street}
-              onChange={(e) => setStreet(e.target.value)}
+              name="street"
+              value={formData.street}
+              onChange={handleChange}
               required
             ></input>
           </div>
@@ -103,8 +108,9 @@ export default function Form() {
             <label>City</label>
             <input
               type="text"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
               required
             ></input>
           </div>
@@ -112,10 +118,12 @@ export default function Form() {
           <div className="forms_input">
             <label>State</label>
             <select
-              value={state}
-              onChange={(e) => setState(e.target.value)}
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
               required
             >
+              <option value="">Choose your state</option>
               {MOCK_DATA.map((option) => (
                 <option key={option.last_name}>{option.state}</option>
               ))}
@@ -126,8 +134,9 @@ export default function Form() {
             <label>Zip Code</label>
             <input
               type="number"
-              value={zipCode}
-              onChange={(e) => setZipCode(e.target.value)}
+              name="zipCode"
+              value={formData.zipCode}
+              onChange={handleChange}
               required
             ></input>
           </div>
@@ -136,10 +145,12 @@ export default function Form() {
         <div className="forms_input">
           <label>Department</label>
           <select
-            value={department}
-            onChange={(e) => setDepartment(e.target.value)}
+            name="department"
+            value={formData.department}
+            onChange={handleChange}
             required
           >
+            <option value="">Choose your department</option>
             {MOCK_DATA.map((opt) => (
               <option key={opt.first_name}>{opt.department}</option>
             ))}
@@ -151,3 +162,16 @@ export default function Form() {
     </div>
   );
 }
+
+// AT FIRST I DID THAT , but there was too much useState
+//and because after I also wants to reset the inputs I had to write again all of that
+
+// const [firstName, setFirstName] = useState("");
+// const [lastName, setLastName] = useState("");
+// const [startDate, setStartDate] = useState("");
+// const [department, setDepartment] = useState("");
+// const [birthday, setBirthday] = useState("");
+// const [street, setStreet] = useState("");
+// const [city, setCity] = useState("");
+// const [state, setState] = useState("");
+// const [zipCode, setZipCode] = useState("");
