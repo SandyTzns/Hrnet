@@ -21,8 +21,16 @@
 20/06
 
 - Configuration Redux - DONE
-- Fonction submit form
-- Dispatch to REDUX
+
+21/06
+
+- Dispatch to REDUX - DONE
+- map() pour les select (DEPARTMENT + STATE) - DONE
+
+- Alert quand submitted
+- Delete form after submission
+- Add submitted profile to basicTable
+  Refaire le mock data pour avoir 100 profiles
 
 Liste de tasks à faire :
 

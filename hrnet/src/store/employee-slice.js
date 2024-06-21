@@ -7,7 +7,7 @@ export const employeeSlice = createSlice({
     lastName: "",
     startDate: "",
     department: "",
-    dateOfBirth: "",
+    birthday: "",
     street: "",
     city: "",
     state: "",
@@ -15,15 +15,7 @@ export const employeeSlice = createSlice({
   },
   reducers: {
     createNewEmployee: (currentSlice, action) => {
-      currentSlice.firstName = action.payload.firstName;
-      currentSlice.lastName = action.payload.lastName;
-      currentSlice.startDate = action.payload.startDate;
-      currentSlice.department = action.payload.department;
-      currentSlice.dateOfBirth = action.payload.dateOfBirth;
-      currentSlice.street = action.payload.street;
-      currentSlice.city = action.payload.city;
-      currentSlice.state = action.payload.state;
-      currentSlice.zipCode = action.payload.zipCode;
+      return { ...currentSlice, ...action.payload };
     },
   },
 });
