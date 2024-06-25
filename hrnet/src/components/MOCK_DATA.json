@@ -1,10 +1,26 @@
-[{"first_name":"Edi","last_name":"Karby","start_date":"08/11/1978","department":"Product Management","date_of_birth":"08/02/1980","street":"Heath","city":"Fresno","state":"California","zip_code":"93750"},
-{"first_name":"Percival","last_name":"Chilcott","start_date":"02/07/2005","department":"Accounting","date_of_birth":"24/11/1979","street":"Reindahl","city":"Austin","state":"Texas","zip_code":"78789"},
-{"first_name":"Kassia","last_name":"Brumbye","start_date":"28/11/2008","department":"Product Management","date_of_birth":"02/02/2003","street":"Rieder","city":"San Antonio","state":"Texas","zip_code":"78220"},
-{"first_name":"Cathrine","last_name":"Clamp","start_date":"24/09/1980","department":"Support","date_of_birth":"09/11/1984","street":"Dexter","city":"Kalamazoo","state":"Michigan","zip_code":"49006"},
-{"first_name":"Margaux","last_name":"Yancey","start_date":"15/10/2012","department":"Support","date_of_birth":"31/01/1978","street":"3rd","city":"Salt Lake City","state":"Utah","zip_code":"84125"},
-{"first_name":"Lilly","last_name":"Tomala","start_date":"25/11/2011","department":"Research and Development","date_of_birth":"07/05/1984","street":"Schurz","city":"Birmingham","state":"Alabama","zip_code":"35210"},
-{"first_name":"Brietta","last_name":"Coghlan","start_date":"30/01/2000","department":"Human Resources","date_of_birth":"27/02/1976","street":"Pawling","city":"Colorado Springs","state":"Colorado","zip_code":"80910"},
-{"first_name":"Beverlee","last_name":"Dowyer","start_date":"10/01/1991","department":"Accounting","date_of_birth":"27/11/1985","street":"Kings","city":"Milwaukee","state":"Wisconsin","zip_code":"53205"},
-{"first_name":"Riley","last_name":"Abrahmer","start_date":"18/03/2010","department":"Engineering","date_of_birth":"08/03/1982","street":"Bultman","city":"Spring Hill","state":"Florida","zip_code":"34611"},
-{"first_name":"Skipton","last_name":"Orsay","start_date":"29/05/2016","department":"Research and Development","date_of_birth":"10/07/2004","street":"Jenifer","city":"Las Vegas","state":"Nevada","zip_code":"89130"}]
+[
+  {
+    "id": 1,
+    "first_name": "Vaughan",
+    "last_name": "Kittless",
+    "start_date": "2020-07-04",
+    "department": "Marketing",
+    "birthday": "1988-01-27",
+    "street": "Fremont",
+    "city": "Memphis",
+    "state": "Tennessee",
+    "zip_code": "38119"
+  },
+  {
+    "id": 2,
+    "first_name": "Karita",
+    "last_name": "Cairney",
+    "start_date": "2020-05-29",
+    "department": "Marketing",
+    "birthday": "1975-12-15",
+    "street": "Browning",
+    "city": "Austin",
+    "state": "Texas",
+    "zip_code": "78778"
+  }
+]

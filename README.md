@@ -29,16 +29,22 @@
 - Alert quand submitted - DONE
 - Delete form after submission - DONE
 
-22/06
+24/06
 
+Refaire le mock data pour avoir 100 profiles - DONE
+
+25/06
+
+- CSS FORM - semi DONE
+
+26/07
+
+- finir CSS FORM
 - Add submitted profile to basicTable
-  Refaire le mock data pour avoir 100 profiles
+- Plugin
 
 Liste de tasks à faire :
 
-What I really want to do : \*\* alert form submitted
-
-- css FORM
 - finish tuto for Table
 - FORM -
 - Pluging modal voir :
