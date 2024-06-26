@@ -46,9 +46,5 @@ Refaire le mock data pour avoir 100 profiles - DONE
 Liste de tasks à faire :
 
 - finish tuto for Table
-- FORM -
 - Pluging modal voir :
-  https://github.com/Anoerak/Tutorials/tree/main/React/React_Create_Your_NPM_Package
-- CSS the app (if you want ! Not necessary)
-
-Installler npm
+  https://github.com/Anoerak/Tutorials/tree/main/React/Reat_Create_Your_NPM_Package

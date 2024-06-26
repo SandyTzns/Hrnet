@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createNewEmployee } from "../store/employee-slice";
-import { NavLink } from "react-router-dom";
+import Nav from "./Nav";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
 
@@ -39,9 +39,7 @@ export default function Form() {
 
   return (
     <div className="employee_form">
-      <h1>HRnet</h1>
-      <NavLink to="/employees">View Current Employee</NavLink>
-
+      <Nav />
       <div className="container">
         <div className="title">Create Employee</div>
         <form onSubmit={Submit}>
@@ -56,7 +54,6 @@ export default function Form() {
                 required
               ></input>
             </div>
-
             <div className="input-box">
               <label className="details">Last Name</label>
               <input
@@ -67,7 +64,6 @@ export default function Form() {
                 required
               ></input>
             </div>
-
             <div className="input-box">
               <label className="details" htmlFor="birthday">
                 Date Of Birth
@@ -81,7 +77,6 @@ export default function Form() {
                 required
               ></input>
             </div>
-
             <div className="input-box">
               <label className="details" htmlFor="date">
                 Start Date
@@ -95,10 +90,8 @@ export default function Form() {
                 required
               ></input>
             </div>
-
             <fieldset className="adress">
               <legend>Address</legend>
-
               <div className="input-box">
                 <label className="details">Street</label>
                 <input
@@ -109,7 +102,6 @@ export default function Form() {
                   required
                 ></input>
               </div>
-
               <div className="input-box">
                 <label className="details">City</label>
                 <input
@@ -131,8 +123,10 @@ export default function Form() {
                 ></input>
               </div>
 
-              <div className="input-box">
-                <label className="details">State</label>
+              <div className="input-box select-box">
+                <label className="details" id="state">
+                  State
+                </label>
                 <select
                   name="state"
                   value={formData.state}
@@ -146,8 +140,7 @@ export default function Form() {
                 </select>
               </div>
             </fieldset>
-
-            <div className="input-box">
+            <div id="department-box" className="input-box">
               <label className="details">Department</label>
               <select
                 name="department"
@@ -160,10 +153,10 @@ export default function Form() {
                   <option key={opt.id}>{opt.department}</option>
                 ))}
               </select>
-            </div>
-            <div className="button">
-              <button type="submit">Save</button>
-            </div>
+            </div>{" "}
+          </div>
+          <div className="button">
+            <button type="submit">SAVE</button>
           </div>
         </form>
       </div>
