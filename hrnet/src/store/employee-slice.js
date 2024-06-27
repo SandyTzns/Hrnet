@@ -1,24 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = [];
+
 export const employeeSlice = createSlice({
   name: "employeeSlice",
-  initialState: {
-    firstName: "",
-    lastName: "",
-    startDate: "",
-    department: "",
-    birthday: "",
-    street: "",
-    city: "",
-    state: "",
-    zipCode: "",
-  },
+  initialState,
   reducers: {
     createNewEmployee: (currentSlice, action) => {
-      return { ...currentSlice, ...action.payload };
+      currentSlice.push(action.payload);
     },
   },
 });
 
-const { createNewEmployee } = employeeSlice.actions;
-export { createNewEmployee };
+export const { createNewEmployee } = employeeSlice.actions;
+export default employeeSlice.reducer;

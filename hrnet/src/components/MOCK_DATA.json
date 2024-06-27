@@ -1,26 +1,12 @@
 [
-  {
-    "id": 1,
-    "first_name": "Vaughan",
-    "last_name": "Kittless",
-    "start_date": "2020-07-04",
-    "department": "Marketing",
-    "birthday": "1988-01-27",
-    "street": "Fremont",
-    "city": "Memphis",
-    "state": "Tennessee",
-    "zip_code": "38119"
-  },
-  {
-    "id": 2,
-    "first_name": "Karita",
-    "last_name": "Cairney",
-    "start_date": "2020-05-29",
-    "department": "Marketing",
-    "birthday": "1975-12-15",
-    "street": "Browning",
-    "city": "Austin",
-    "state": "Texas",
-    "zip_code": "78778"
-  }
+  { "id": 1, "state": "California", "department": "Training" },
+  { "id": 2, "state": "District of Columbia", "department": "Sales" },
+  { "id": 3, "state": "Florida", "department": "Legal" },
+  { "id": 4, "state": "Georgia", "department": "Business Development" },
+  { "id": 5, "state": "Missouri", "department": "Accounting" },
+  { "id": 6, "state": "Georgia", "department": "Support" },
+  { "id": 7, "state": "Colorado", "department": "Training" },
+  { "id": 8, "state": "Arkansas", "department": "Sales" },
+  { "id": 9, "state": "North Carolina", "department": "Marketing" },
+  { "id": 10, "state": "Washington", "department": "Business Development" }
 ]

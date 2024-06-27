@@ -39,9 +39,13 @@ Refaire le mock data pour avoir 100 profiles - DONE
 
 26/07
 
-- finir CSS FORM
+- finir CSS FORM - DONE
+
+27/06
+
 - Add submitted profile to basicTable
 - Plugin
+- tests de performances
 
 Liste de tasks à faire :
 

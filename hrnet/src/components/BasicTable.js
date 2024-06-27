@@ -1,15 +1,17 @@
 import { useMemo } from "react";
 import { useTable } from "react-table";
-import MOCK_DATA from "./MOCK_DATA.json";
+import { useSelector } from "react-redux";
 import { COLUMNS } from "./columns";
 
 import "../css/table.css";
 import { NavLink } from "react-router-dom";
 
 export default function BasicTable() {
+  // useSelector to get the employee form the Redux store
+  const employees = useSelector((state) => state.employees);
   //useMemo hook so the data isn't re-render on every rendering
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+  const data = useMemo(() => employees, [employees]);
 
   const tableInstance = useTable({
     columns: columns,
@@ -24,7 +26,7 @@ export default function BasicTable() {
     <>
       <h1>Current Employees</h1>
       <div className="sorting_section">
-        <label for="entries">
+        <label htmlFor="entries">
           Show
           <select name="entries" id="entries">
             <option value="10">10</option>
@@ -34,16 +36,18 @@ export default function BasicTable() {
           </select>
           entries
         </label>
-        <label for="search">
+        <label htmlFor="search">
           Search: <input type="text" name="search" id="search"></input>
         </label>
       </div>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
+            <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
               {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+                <th {...column.getHeaderProps()} key={column.id}>
+                  {column.render("Header")}
+                </th>
               ))}
             </tr>
           ))}
@@ -52,10 +56,12 @@ export default function BasicTable() {
           {rows.map((row) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
+              <tr key={row.id} {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                    <td key={cell.getCellProps().key} {...cell.getCellProps()}>
+                      {cell.render("Cell")}
+                    </td>
                   );
                 })}
               </tr>
