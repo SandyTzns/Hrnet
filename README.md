@@ -51,7 +51,7 @@ Refaire le mock data pour avoir 100 profiles - DONE
 
 30/06
 
-- 1 commentaire
+- Created component
 
 - Plugin
 - tests de performances

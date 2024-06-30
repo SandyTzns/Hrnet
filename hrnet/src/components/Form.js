@@ -5,7 +5,7 @@ import { createNewEmployee } from "../store/employee-slice";
 import Nav from "./Nav";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
-import Modale from "./Modale";
+import SandyModale from "sandy-super-plugin/dist/Sandy_Modale";
 
 export default function Form() {
   const initialState = {
@@ -168,20 +168,7 @@ export default function Form() {
           </div>
         </form>
       </div>
-      {isModalOpen && <Modale closeModal={closeModal} />}
+      {isModalOpen && <SandyModale closeModal={closeModal} />}
     </div>
   );
 }
-
-// AT FIRST I DID THAT , but there was too much useState
-//and because after I also wants to reset the inputs I had to write again all of that
-
-// const [firstName, setFirstName] = useState("");
-// const [lastName, setLastName] = useState("");
-// const [startDate, setStartDate] = useState("");
-// const [department, setDepartment] = useState("");
-// const [birthday, setBirthday] = useState("");
-// const [street, setStreet] = useState("");
-// const [city, setCity] = useState("");
-// const [state, setState] = useState("");
-// const [zipCode, setZipCode] = useState("");

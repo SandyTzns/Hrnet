@@ -5,7 +5,6 @@ import { COLUMNS } from "./columns";
 
 import "../css/table.css";
 import { NavLink } from "react-router-dom";
-// import Modale from "./Modale";
 
 export default function BasicTable() {
   // useSelector to get the employee form the Redux store
@@ -72,7 +71,6 @@ export default function BasicTable() {
       </table>
       <div className="links">
         <NavLink to="/">Home</NavLink>
-        {/* <Modale /> */}
       </div>
     </>
   );
