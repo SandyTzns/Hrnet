@@ -43,7 +43,16 @@ Refaire le mock data pour avoir 100 profiles - DONE
 
 27/06
 
-- Add submitted profile to basicTable
+- Add submitted profile to basicTable - DONE
+
+28/06
+
+- 1 commentaire
+
+30/06
+
+- 1 commentaire
+
 - Plugin
 - tests de performances
 

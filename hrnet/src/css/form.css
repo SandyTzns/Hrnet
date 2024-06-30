@@ -93,7 +93,7 @@ fieldset {
   justify-content: center;
 }
 
-button {
+.save-btn {
   color: white;
   font-weight: 700;
   width: 500px;
@@ -101,4 +101,5 @@ button {
   background-color: #04aa6d;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
