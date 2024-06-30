@@ -25,10 +25,10 @@
   padding: 25px 30px;
   border-radius: 5px;
 }
-.container .title {
-  font-size: 25px;
+h2 {
   font-weight: 500;
   border-bottom: 3px solid #04aa6d;
+  margin: 0;
 }
 
 .container form .user-details {
@@ -98,7 +98,7 @@ fieldset {
   font-weight: 700;
   width: 500px;
   padding: 10px;
-  background-color: #04aa6d;
+  background-color: #044e30;
   border: none;
   border-radius: 5px;
   cursor: pointer;

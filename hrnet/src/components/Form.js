@@ -47,24 +47,30 @@ export default function Form() {
     <div className="employee_form">
       <Nav />
       <div className="container">
-        <div className="title">Create Employee</div>
+        <h2>Create Employee</h2>
         <form onSubmit={Submit}>
           <div className="user-details">
             <div className="input-box">
-              <label className="details">First Name</label>
+              <label htmlFor="firstName" className="details">
+                First Name
+              </label>
               <input
                 type="text"
                 name="firstName"
+                id="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
                 required
               ></input>
             </div>
             <div className="input-box">
-              <label className="details">Last Name</label>
+              <label htmlFor="lastName" className="details">
+                Last Name
+              </label>
               <input
                 type="text"
                 name="lastName"
+                id="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
                 required
@@ -99,30 +105,39 @@ export default function Form() {
             <fieldset className="adress">
               <legend>Address</legend>
               <div className="input-box">
-                <label className="details">Street</label>
+                <label htmlFor="street" className="details">
+                  Street
+                </label>
                 <input
                   type="text"
                   name="street"
+                  id="street"
                   value={formData.street}
                   onChange={handleChange}
                   required
                 ></input>
               </div>
               <div className="input-box">
-                <label className="details">City</label>
+                <label htmlFor="city" className="details">
+                  City
+                </label>
                 <input
                   type="text"
                   name="city"
+                  id="city"
                   value={formData.city}
                   onChange={handleChange}
                   required
                 ></input>
               </div>
               <div className="input-box">
-                <label className="details">Zip Code</label>
+                <label htmlFor="zipCode" className="details">
+                  Zip Code
+                </label>
                 <input
                   type="number"
                   name="zipCode"
+                  id="zipCode"
                   value={formData.zipCode}
                   onChange={handleChange}
                   required
@@ -130,11 +145,12 @@ export default function Form() {
               </div>
 
               <div className="input-box select-box">
-                <label className="details" id="state">
+                <label htmlFor="state" className="details">
                   State
                 </label>
                 <select
                   name="state"
+                  id="state"
                   value={formData.state}
                   onChange={handleChange}
                   required
@@ -147,9 +163,12 @@ export default function Form() {
               </div>
             </fieldset>
             <div id="department-box" className="input-box">
-              <label className="details">Department</label>
+              <label htmlFor="department" className="details">
+                Department
+              </label>
               <select
                 name="department"
+                id="department"
                 value={formData.department}
                 onChange={handleChange}
                 required
