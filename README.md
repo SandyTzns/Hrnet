@@ -6,3 +6,4 @@ Dans le formulaires on utilise le DatePicker et des selects
 Pour la table on utilise React Table
 Le state est géré avec Redux
 La modale est un plugin créer moi-même et importer
+Test de performance avec LightHouse sur Chrome DevTools
