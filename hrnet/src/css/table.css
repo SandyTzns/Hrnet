@@ -49,3 +49,11 @@ table th {
   margin-top: 20px;
   text-align: center;
 }
+
+.no-data {
+  text-align: center;
+}
+
+.pagination-info {
+  margin-left: 100px;
+}

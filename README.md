@@ -45,19 +45,12 @@ Refaire le mock data pour avoir 100 profiles - DONE
 
 - Add submitted profile to basicTable - DONE
 
-28/06
-
-- 1 commentaire
-
 30/06
 
-- Created component
+- Created component - DONE
+- Plugin - DONE
+- tests de performances - DONE
 
-- Plugin
-- tests de performances
+1er/07
 
-Liste de tasks à faire :
-
-- finish tuto for Table
-- Pluging modal voir :
-  https://github.com/Anoerak/Tutorials/tree/main/React/Reat_Create_Your_NPM_Package
+- Finish Basic Table

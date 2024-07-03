@@ -86,6 +86,7 @@ export default function Form() {
                 name="birthday"
                 value={formData.birthday}
                 onChange={handleChange}
+                max="2005-12-31"
                 required
               ></input>
             </div>
