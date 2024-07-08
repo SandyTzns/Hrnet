@@ -15,34 +15,6 @@ npm install
 Démarrez l'application :
 npm start
 
-Structure du Projet
-
-hrnet/
-├── node_modules/
-├── public/
-├── src/
-│ ├── components/
-│ │ ├── BasicTable.js
-│ │ ├── columns.js
-│ │ ├── Form.js
-│ │ ├── MOCK_DATA.json
-│ │ ├── Nav.js
-│ ├── css/
-│ │ ├── form.css
-│ │ ├── nav.css
-│ │ ├── table.css
-│ ├── store/
-│ │ ├── employee-slice.js
-│ ├── index.js
-│ ├── App.js
-│ ├── index.css
-│ ├── reportWebVitals.js
-│ ├── setupTests.js
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── README.md
-
 Composants Principaux
 
 Form Component

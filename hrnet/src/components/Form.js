@@ -5,7 +5,7 @@ import { createNewEmployee } from "../store/employee-slice";
 import Nav from "./Nav";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
-// import SandyModale from "sandy-super-plugin/dist/Sandy_Modale";
+import BasicModal from "sandy-modal-plugin/dist/Modal";
 
 export default function Form() {
   const initialState = {
@@ -190,9 +190,9 @@ export default function Form() {
           </div>
         </form>
       </div>
-      {/* {isModalOpen && (
-        // <SandyModale closeModal={closeModal} message={modalMessage} />
-      )} */}
+      {isModalOpen && (
+        <BasicModal closeModal={closeModal} message={modalMessage} />
+      )}
     </div>
   );
 }
