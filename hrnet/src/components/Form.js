@@ -5,7 +5,7 @@ import { createNewEmployee } from "../store/employee-slice";
 import Nav from "./Nav";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
-import SandyModale from "sandy-super-plugin/dist/Sandy_Modale";
+// import SandyModale from "sandy-super-plugin/dist/Sandy_Modale";
 
 export default function Form() {
   const initialState = {
@@ -21,6 +21,7 @@ export default function Form() {
   };
   const [formData, setFormData] = useState(initialState);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const dispatch = useDispatch();
 
@@ -35,6 +36,7 @@ export default function Form() {
   const Submit = (e) => {
     e.preventDefault();
     setIsModalOpen(true);
+    setModalMessage("Form submitted successfully !");
     dispatch(createNewEmployee(formData));
   };
 
@@ -188,7 +190,9 @@ export default function Form() {
           </div>
         </form>
       </div>
-      {isModalOpen && <SandyModale closeModal={closeModal} />}
+      {/* {isModalOpen && (
+        // <SandyModale closeModal={closeModal} message={modalMessage} />
+      )} */}
     </div>
   );
 }
