@@ -6,11 +6,33 @@ import { COLUMNS } from "./columns";
 import "../css/table.css";
 import { NavLink } from "react-router-dom";
 
+/**
+ * Le composant BasicTable rend un tableau des employés actuels.
+ * Il utilise `react-table` pour la création de tableaux et la pagination.
+ *
+ * @component
+ * @example
+ * return (
+ *   <BasicTable />
+ * )
+ */
 export default function BasicTable() {
-  // useSelector to get the employee form the Redux store
+  /**
+   * Utilise useSelector pour obtenir les employés depuis le store Redux.
+   * @returns {Array} La liste des employés.
+   */
   const employees = useSelector((state) => state.employees);
-  //useMemo hook so the data isn't re-render on every rendering
+
+  /**
+   * Utilise le hook useMemo pour éviter que les données ne soient re-rendues à chaque rendu.
+   * @returns {Array} Les colonnes du tableau.
+   */
   const columns = useMemo(() => COLUMNS, []);
+
+  /**
+   * Utilise le hook useMemo pour éviter que les données ne soient re-rendues à chaque rendu.
+   * @returns {Array} Les données des employés.
+   */
   const data = useMemo(() => employees, [employees]);
 
   const tableInstance = useTable(
@@ -21,7 +43,9 @@ export default function BasicTable() {
     usePagination
   );
 
-  // those are fonctions and arrays that the useTable hooks gives us to enable easy table creation
+  /**
+   * Ces fonctions et tableaux sont fournis par le hook useTable pour faciliter la création de tableaux.
+   */
   const {
     getTableProps,
     getTableBodyProps,
@@ -36,7 +60,7 @@ export default function BasicTable() {
 
   return (
     <>
-      <h1>Current Employees</h1>
+      <h1>Employés actuels</h1>
 
       <table {...getTableProps()}>
         <thead>
@@ -54,7 +78,7 @@ export default function BasicTable() {
           {page.length === 0 ? (
             <tr>
               <td className="no-data" colSpan={columns.length}>
-                No data available in the table
+                Aucune donnée disponible dans le tableau
               </td>
             </tr>
           ) : (
@@ -80,11 +104,11 @@ export default function BasicTable() {
       </table>
       <div className="pagination-info">
         {data.length === 0
-          ? "Showing 0 to 0 of 0 entries"
-          : `Showing ${startRow} to ${endRow} of ${data.length} entries`}
+          ? "Affichage de 0 à 0 sur 0 entrées"
+          : `Affichage de ${startRow} à ${endRow} sur ${data.length} entrées`}
       </div>
       <div className="links">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Accueil</NavLink>
       </div>
     </>
   );

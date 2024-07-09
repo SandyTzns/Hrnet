@@ -1,41 +1,49 @@
-// Create the columns
-// header = labels of the columns - accessor = a way to associate each columns with the data
-
+/**
+ * Définit les colonnes pour le tableau des employés.
+ *
+ * Chaque objet dans le tableau représente une colonne avec un en-tête et un accessoire.
+ * `Header` est le nom de la colonne et `accessor` est une façon d'associer chaque colonne aux données.
+ *
+ * @constant
+ * @type {Array<Object>}
+ * @property {string} Header - Le nom de la colonne.
+ * @property {string} accessor - Le champ de données associé à la colonne.
+ */
 export const COLUMNS = [
   {
-    Header: "First Name",
+    Header: "Prénom",
     accessor: "firstName",
   },
   {
-    Header: "Last Name",
+    Header: "Nom de famille",
     accessor: "lastName",
   },
   {
-    Header: "Start Date",
+    Header: "Date de début",
     accessor: "startDate",
   },
   {
-    Header: "Department",
+    Header: "Département",
     accessor: "department",
   },
   {
-    Header: "Date of Birth",
+    Header: "Date de naissance",
     accessor: "birthday",
   },
   {
-    Header: "Street",
+    Header: "Rue",
     accessor: "street",
   },
   {
-    Header: "City",
+    Header: "Ville",
     accessor: "city",
   },
   {
-    Header: "State",
+    Header: "État",
     accessor: "state",
   },
   {
-    Header: "Zip Code",
+    Header: "Code postal",
     accessor: "zipCode",
   },
 ];
