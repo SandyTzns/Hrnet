@@ -126,6 +126,7 @@ document.getElementById('root')
 function App() {
 return (
 <Router>
+
 <Nav />
 <Switch>
 <Route path="/" exact component={Form} />
