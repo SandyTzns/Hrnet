@@ -5,7 +5,7 @@ import { createNewEmployee } from "../store/employee-slice";
 import Nav from "./Nav";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "../css/form.css";
-import BasicModal from "sandy-modal-plugin/dist/Modal";
+import Modal from "oc-modal-react/dist/index";
 
 /**
  * Le composant Form est un formulaire qui permet de créer un nouvel employé.
@@ -252,7 +252,7 @@ export default function Form() {
          * @param {Function} props.closeModal - Fonction pour fermer la modal.
          * @param {string} props.message - Le message à afficher dans la modal.
          */
-        <BasicModal closeModal={closeModal} message={modalMessage} />
+        <Modal closeModal={closeModal} message={modalMessage} />
       )}
     </div>
   );
