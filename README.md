@@ -6,8 +6,11 @@ Installation
 Pour installer et exécuter ce projet localement, suivez les étapes ci-dessous :
 
 Clonez le dépôt :
-git clone <URL_DU_DEPOT>
+
+```bash
+git clone
 cd hrnet
+```
 
 Installez les dépendances :
 
@@ -23,38 +26,31 @@ Démarrez l'application :
 
 Composants Principaux
 
-/\*\*
+Le composant `Form` permet de créer un nouvel employé.
 
-- Le composant Form permet de créer un nouvel employé.
-- Les données du formulaire sont gérées avec le hook useState et l'action Redux createNewEmployee est dispatchée lors de la soumission du formulaire.
-  \*/
-  import Form from './components/Form';
+Les données du formulaire sont gérées avec le hook useState et l'action Redux createNewEmployee est dispatchée lors de la soumission du formulaire.
 
 Utilisation du Plugin oc-modal-react
-/\*\*
 
 - Le plugin oc-modal-react est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
 -
 - Pour l'utiliser, suivez les étapes ci-dessous :
 -
 - Installer le plugin :
-- ```sh
-    npm i oc-modal-react
-  ```
--
-- Importer le dans le composant FORM :
-- ```js
-  import Modal from "oc-modal-react/dist/index";
-  ```
 
-- ```
-  */
-  ```
+```bash
+    npm i oc-modal-react
+```
+
+Importer le dans le composant FORM :
+
+```javascript
+import Modal from "oc-modal-react/dist/index";
+```
 
 BasicTable Component
-/\*\*
 
-- Le composant BasicTable affiche une liste des employés actuels en utilisant react-table.
+- Le composant `BasicTable` affiche une liste des employés actuels en utilisant react-table.
 - Les données sont obtenues depuis le store Redux avec useSelector.
   \*/
   import BasicTable from './components/BasicTable';
