@@ -42,7 +42,7 @@ Installer le plugin :
     npm i oc-modal-react
 ```
 
-Importer le dans le composant FORM :
+Importer le dans le composant `FORM` :
 
 ```javascript
 import Modal from "oc-modal-react/dist/index";
@@ -59,7 +59,7 @@ import BasicTable from "./components/BasicTable";
 
 Columns Configuration
 
-- Le fichier columns.js définit les colonnes de la table utilisées par react-table.
+- Le fichier `columns.js` définit les colonnes de la table utilisées par react-table.
 
 ```javascript
 import { COLUMNS } from "./components/columns";
@@ -67,7 +67,7 @@ import { COLUMNS } from "./components/columns";
 
 Nav Component
 
-- Le composant Nav affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
+- Le composant `Nav `affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
 
 ```javascript
 import Nav from "./components/Nav";
@@ -75,13 +75,13 @@ import Nav from "./components/Nav";
 
 Configuration de Redux Store
 
-- Le fichier store/index.js configure le store Redux avec le slice des employés.
+- Le fichier `store/index.js` configure le store Redux avec le slice des employés.
 
 ```javascript
 import store from "./store";
 ```
 
-- Le fichier index.js configure le rendu de l'application React et intègre le store Redux.
+- Le fichier `index.js` configure le rendu de l'application React et intègre le store Redux.
 
 ```javascript
 import { Provider } from "react-redux";
@@ -97,7 +97,7 @@ ReactDOM.render(
 );
 ```
 
-- Le composant principal (App.js) définit les routes principales de l'application.
+- Le composant principal `App.js` définit les routes principales de l'application.
 
 ```javascript
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
