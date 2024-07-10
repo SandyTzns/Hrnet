@@ -12,23 +12,13 @@ cd hrnet
 Installez les dépendances :
 
 - ```sh
-
-  ```
-
-- npm install
-- ```
-
+  npm install
   ```
 
 Démarrez l'application :
 
 - ```sh
-
-  ```
-
-- npm start
-- ```
-
+  npm start
   ```
 
 Composants Principaux
@@ -40,30 +30,23 @@ Composants Principaux
   \*/
   import Form from './components/Form';
 
-Utilisation du Plugin ModalBasicReact
+Utilisation du Plugin oc-modal-react
 /\*\*
 
-- Le plugin ModalBasicReact est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
+- Le plugin oc-modal-react est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
 -
 - Pour l'utiliser, suivez les étapes ci-dessous :
 -
 - Installer le plugin :
 - ```sh
-
+    npm i oc-modal-react
   ```
-
-- npm install sandy-modal-plugin
-- ```
-
-  ```
-
 -
 - Importer le dans le composant FORM :
 - ```js
-
+  import Modal from "oc-modal-react/dist/index";
   ```
 
-- import BasicModal from "sandy-modal-plugin/dist/Modal";
 - ```
   */
   ```
