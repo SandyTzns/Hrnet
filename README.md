@@ -14,15 +14,15 @@ cd hrnet
 
 Installez les dépendances :
 
-- ```sh
-  npm install
-  ```
+```bash
+ npm install
+```
 
 Démarrez l'application :
 
-- ```sh
+```bash
   npm start
-  ```
+```
 
 Composants Principaux
 
@@ -32,11 +32,11 @@ Les données du formulaire sont gérées avec le hook useState et l'action Redux
 
 Utilisation du Plugin oc-modal-react
 
-- Le plugin oc-modal-react est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
--
+- Le plugin `oc-modal-react` est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
+
 - Pour l'utiliser, suivez les étapes ci-dessous :
--
-- Installer le plugin :
+
+Installer le plugin :
 
 ```bash
     npm i oc-modal-react
@@ -59,60 +59,69 @@ Columns Configuration
 /\*\*
 
 - Le fichier columns.js définit les colonnes de la table utilisées par react-table.
-  \*/
-  import { COLUMNS } from './components/columns';
+
+```javascript
+import { COLUMNS } from "./components/columns";
+```
 
 Nav Component
 /\*\*
 
 - Le composant Nav affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
-  \*/
-  import Nav from './components/Nav';
+
+```javascript
+import Nav from "./components/Nav";
+```
 
 Configuration de Redux
 Store
 /\*\*
 
 - Le fichier store/index.js configure le store Redux avec le slice des employés.
-  \*/
-  import store from './store';
+
+```javascript
+import store from "./store";
+```
 
 /\*\*
 
 - Le fichier index.js configure le rendu de l'application React et intègre le store Redux.
-  \*/
-  import { Provider } from 'react-redux';
-  import { store } from './store';
-  import App from './App';
-  import ReactDOM from 'react-dom';
+
+```javascript
+import { Provider } from "react-redux";
+import { store } from "./store";
+import App from "./App";
+import ReactDOM from "react-dom";
 
 ReactDOM.render(
-<Provider store={store}>
-<App />
-</Provider>,
-document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
 );
+```
 
 /\*\*
 
 - Le composant principal (App.js) définit les routes principales de l'application.
-  \*/
-  import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-  import Form from './components/Form';
-  import BasicTable from './components/BasicTable';
-  import Nav from './components/Nav';
+
+```javascript
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Form from "./components/Form";
+import BasicTable from "./components/BasicTable";
+import Nav from "./components/Nav";
 
 function App() {
-return (
-<Router>
-
-<Nav />
-<Switch>
-<Route path="/" exact component={Form} />
-<Route path="/employees" component={BasicTable} />
-</Switch>
-</Router>
-);
+  return (
+    <Router>
+      <Nav />
+      <Switch>
+        <Route path="/" exact component={Form} />
+        <Route path="/employees" component={BasicTable} />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
+```
