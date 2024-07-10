@@ -52,11 +52,12 @@ BasicTable Component
 
 - Le composant `BasicTable` affiche une liste des employés actuels en utilisant react-table.
 - Les données sont obtenues depuis le store Redux avec useSelector.
-  \*/
-  import BasicTable from './components/BasicTable';
+
+```javascript
+import BasicTable from "./components/BasicTable";
+```
 
 Columns Configuration
-/\*\*
 
 - Le fichier columns.js définit les colonnes de la table utilisées par react-table.
 
@@ -65,7 +66,6 @@ import { COLUMNS } from "./components/columns";
 ```
 
 Nav Component
-/\*\*
 
 - Le composant Nav affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
 
@@ -73,17 +73,13 @@ Nav Component
 import Nav from "./components/Nav";
 ```
 
-Configuration de Redux
-Store
-/\*\*
+Configuration de Redux Store
 
 - Le fichier store/index.js configure le store Redux avec le slice des employés.
 
 ```javascript
 import store from "./store";
 ```
-
-/\*\*
 
 - Le fichier index.js configure le rendu de l'application React et intègre le store Redux.
 
@@ -100,8 +96,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-
-/\*\*
 
 - Le composant principal (App.js) définit les routes principales de l'application.
 
