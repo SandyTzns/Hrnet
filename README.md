@@ -1,8 +1,8 @@
-HRnet
+# HRnet
 
 Ce projet est une application de gestion des employés créée avec React, Redux et React Table. Elle permet de créer de nouveaux employés et d'afficher la liste des employés actuels.
 
-Installation
+## Installation
 Pour installer et exécuter ce projet localement, suivez les étapes ci-dessous :
 
 Clonez le dépôt :
@@ -24,13 +24,13 @@ Démarrez l'application :
   npm start
 ```
 
-Composants Principaux
+## Composants Principaux
 
 Le composant `Form` permet de créer un nouvel employé.
 
 Les données du formulaire sont gérées avec le hook useState et l'action Redux createNewEmployee est dispatchée lors de la soumission du formulaire.
 
-Utilisation du Plugin oc-modal-react
+## Utilisation du Plugin oc-modal-react
 
 - Le plugin `oc-modal-react` est utilisé pour afficher une modale de confirmation après la soumission du formulaire.
 
@@ -73,7 +73,7 @@ Nav Component
 import Nav from "./components/Nav";
 ```
 
-Configuration de Redux Store
+## Configuration de Redux Store
 
 - Le fichier `store/index.js` configure le store Redux avec le slice des employés.
 
