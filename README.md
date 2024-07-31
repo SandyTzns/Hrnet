@@ -28,7 +28,32 @@ Démarrez l'application :
 
 Le composant `Form` permet de créer un nouvel employé.
 
-Les données du formulaire sont gérées avec le hook useState et l'action Redux createNewEmployee est dispatchée lors de la soumission du formulaire.
+Les données du formulaire sont gérées avec le hook `useState` et l'action Redux `createNewEmployee` est dispatchée lors de la soumission du formulaire.
+
+### BasicTable Component
+
+- Le composant `BasicTable` affiche une liste des employés actuels en utilisant react-table.
+- Les données sont obtenues depuis le store Redux avec useSelector.
+
+```javascript
+import BasicTable from "./components/BasicTable";
+```
+
+### Columns Configuration
+
+- Le fichier `columns.js` définit les colonnes de la table utilisées par react-table.
+
+```javascript
+import { COLUMNS } from "./components/columns";
+```
+
+### Nav Component
+
+- Le composant `Nav `affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
+
+```javascript
+import Nav from "./components/Nav";
+```
 
 ## Utilisation du Plugin oc-modal-react
 
@@ -46,31 +71,6 @@ Importer le dans le composant `FORM` :
 
 ```javascript
 import Modal from "oc-modal-react/dist/index";
-```
-
-BasicTable Component
-
-- Le composant `BasicTable` affiche une liste des employés actuels en utilisant react-table.
-- Les données sont obtenues depuis le store Redux avec useSelector.
-
-```javascript
-import BasicTable from "./components/BasicTable";
-```
-
-Columns Configuration
-
-- Le fichier `columns.js` définit les colonnes de la table utilisées par react-table.
-
-```javascript
-import { COLUMNS } from "./components/columns";
-```
-
-Nav Component
-
-- Le composant `Nav `affiche la barre de navigation avec des liens vers l'accueil et la page des employés.
-
-```javascript
-import Nav from "./components/Nav";
 ```
 
 ## Configuration de Redux Store
